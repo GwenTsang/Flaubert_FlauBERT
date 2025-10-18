@@ -5,4 +5,5 @@ Puis on divise le vecteur par sa norme euclidienne : `q = q / np.linalg.norm(q)`
 
 Cela permet de faire ensuite **un calcul des similarités cosinus** par un produit matriciel ( `sims = emb_matrix_normed @ q` ).
 
-`sims[i] ` correspond au score de similarité entre query et la phrase `i`.
+`sims[i] ` correspond au score de similarité cosinus entre query et la phrase `i` . Ce score est un nombre flottant dans l'intervalle réel $[-1,+1]$.
+1 signifie que les vecteurs ont la même direction, 0 signifie qu'ils sont orthogonaux et -1 signifie qu'ils sont opposés.
