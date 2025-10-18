@@ -1,3 +1,5 @@
+[k_most_similar_phrases.py](https://github.com/GwenTsang/Flaubert_FlauBERT/blob/main/k%20most%20similar%20phrases.py) permet de renvoyer les $k$ phrases les plus similaires à une requête textuelle donnée (`query`) à partir d’un ensemble pré-encodé de phrases (`sentences`) représentées par leurs vecteurs d’embedding (`emb_matrix_normed`).
+
 La phrase `query` est transformée en vecteur avec `embed_sentence(query)`.
 Puis on divise le vecteur par sa norme euclidienne : `q = q / np.linalg.norm(q)`.
 
